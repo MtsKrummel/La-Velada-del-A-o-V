@@ -1,0 +1,44 @@
+---
+import '../styles/global.css'
+import Footer from "../components/Footer.astro";
+import Header from "../components/Header.astro";
+import Sponsors from '../components/Sponsors.astro';
+---
+
+<!doctype html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<title>La Velada del Año V</title>
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta content="og:title" content="La Velada del Año V">
+		<meta content="og:description" content="evento de boxeo aficionado entre streamers, creadores de contenido y celebridades, organizado por Ibai Llanos.">
+		<meta content="og:image" content="https://www.infolavelada.com/og.jpg">
+		<meta content="og:url" content="https://www.infolavelada.com">
+		<meta content="og:type" content="website">
+		<meta content="og:locale" content="es_AR">
+	</head>
+	<body>
+		<Header />
+		<main>
+			<slot />
+		</main>
+		<Sponsors />
+		<Footer />
+	</body>
+</html>
+
+<style>
+	html,
+	body {
+		margin: 0;
+		width: 100%;
+		height: 100%;
+		background-color: #fdb4df;
+	}
+
+	main{
+		height: 700px;
+	}
+</style>
