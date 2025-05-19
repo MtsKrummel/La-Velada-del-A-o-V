@@ -4,8 +4,8 @@
   --color-dark-magenta: #2a1f26;
   --font-primary: "Anisette";
 
-  --color-french-mauve: oklch(67.65% 0.1539 329.18);
-  --color-seashell: oklch(95.25% 0.0147 33.07);
+  --color-theme-french-mauve: oklch(67.65% 0.1539 329.18);
+  --color-theme-seashell: oklch(95.25% 0.0147 33.07);
 }
 
 @font-face {
